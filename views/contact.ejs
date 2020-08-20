@@ -1,0 +1,12 @@
+<%- include('./components/header' , {title : title}) %>
+<body>
+    <%- include('./components/navbar') %>
+
+
+    <form action="/contact" method="post">
+        <input class="form-control-lg m-3 p-3" type="text" placeholder="name" name="name" required><br>
+        <input  class="form-control-lg m-3 p-3"type="email" placeholder="email" name="email"><br>
+        <input  class=" form-control-lg m-3 p-3"type="text" placeholder="telephone" name="tel"><br>
+        <button   class= " btn btn-primary m-3 p-3" type="submit">Submit</button>
+    </form>
+</body>
